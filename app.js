@@ -27,7 +27,7 @@ form.addEventListener(`submit`, s => {
 // Bonus
 // 4a 
 const darkMode = document.querySelector(`#dm`);
-// 4b 
+// 4b wonky but it works
 darkMode.addEventListener(`click`, () => {
     const body = document.querySelector(`*`);
     for (i=0; i<body.clientHeight; i++){
