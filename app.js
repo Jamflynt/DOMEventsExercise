@@ -30,10 +30,17 @@ const darkMode = document.querySelector(`#dm`);
 // 4b wonky but it works
 darkMode.addEventListener(`click`, () => {
     const body = document.querySelector(`*`);
-    for (i=0; i<body.clientHeight; i++){
+    for (i=0; i<body.clientHeight; i++){ // After researching clientHeight a little more I understand why this works and that eventually, after enough clicks, it would cease to work. This is most definitely not the best way to complete this but its kinda a funny discovery. 
         body.classList.toggle(`dark-mode`);
     };
 });
+// OR 
+// darkMode.addEventListener(`click`, () => {
+//     const body = document.querySelector(`*`);
+//     for (x of body){
+//         x.classList.toggle(`dark-mode`);
+//     };
+// });
 
 // 5a
 const reality = document.querySelector(`#reality`);
